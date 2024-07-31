@@ -1,0 +1,1 @@
+{"version":3,"file":"useContextMenuRequest.js","sourceRoot":"","sources":["../../src/hooks/useContextMenuRequest.tsx"],"names":[],"mappings":";;;;;;AAAA,gDAA0B;AAC1B,sCAAqC;AAErC,SAAgB,qBAAqB;IAC3B,IAAA,kBAAkB,GAAK,eAAK,CAAC,UAAU,CAAC,iBAAO,CAAC,mBAA9B,CAA+B;IACzD,OAAO,kBAAkB,CAAC;AAC5B,CAAC;AAHD,sDAGC"}
