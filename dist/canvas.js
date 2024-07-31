@@ -101,7 +101,14 @@ var Canvas = function (props) {
     var handleWheel = function (e) {
         e.preventDefault();
         if (editorRef.current) {
-            editorRef.current.canvas.canvas.relativePan({ x: -e.deltaX, y: -e.deltaY });
+            if (e.shiftKey) {
+                // Shift + wheel for horizontal scrolling
+                editorRef.current.canvas.canvas.relativePan({ x: -e.deltaY, y: 0 });
+            }
+            else {
+                // Normal wheel for vertical scrolling
+                editorRef.current.canvas.canvas.relativePan({ x: 0, y: -e.deltaY });
+            }
         }
     };
     return (React.createElement("div", { id: "layerhub_io_canvas_container", ref: containerRef, style: { flex: 1, position: "relative", overflow: "hidden" } },

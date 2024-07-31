@@ -1,0 +1,26 @@
+# Ignore build output
+# /build/
+# /dist/
+
+# Ignore dependencies
+/node_modules/
+/vendor/
+
+# Ignore IDE and editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+
+
+# Ignore coverage reports
+/coverage/
+
+# Ignore cache directories
+.cache/
+.npm/
+
+yarn.lock
+
+
